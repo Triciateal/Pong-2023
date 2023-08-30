@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Paddle : MonoBehaviour
 {
     public float verticalMovementSpeed;
     public float maxYposition;
@@ -11,7 +11,7 @@ public class NewBehaviourScript : MonoBehaviour
     public int ballHitXDirection;
 
 
-    // Update is called once per frame
+    // Update is called once per frame               
     void Update()
     {
         if (Input.GetKey(upKey) && transform.position.y < maxYposition)
